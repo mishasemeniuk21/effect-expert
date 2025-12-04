@@ -2236,6 +2236,75 @@
       "update_success": {
         "title": "Спосіб оплати оновлено",
         "done_button": "Продовжити покупки"
+      },
+      "card_fields": {
+        "card_number_label": "Номер картки",
+        "card_number_placeholder": "Номер картки",
+        "name_on_card_label": "Ім'я на картці",
+        "name_on_card_placeholder": "Ім'я на картці",
+        "card_expiry_label": "Термін дії (ММ / РР)",
+        "card_expiry_placeholder": "Термін дії (ММ / РР)",
+        "card_verification_value_label": "Код безпеки",
+        "card_verification_value_placeholder": "Код безпеки",
+        "card_start_label": "Дата видачі (ММ / РР)",
+        "card_start_placeholder": "Дата видачі (ММ / РР)",
+        "tooltip": {
+          "tooltip_accessibility_label": "Більше інформації",
+          "card_verification_value_explanation_amex": "4-значний код безпеки на лицьовій стороні вашої картки",
+          "card_verification_value_explanation_other": "3-значний код безпеки на звороті вашої картки",
+          "card_verification_value_explanation": "3-значний код безпеки зазвичай знаходиться на звороті картки. Картки American Express мають 4-значний код, розташований на лицьовій стороні.",
+          "card_security_notice": "Усі транзакції безпечні та зашифровані."
+        },
+        "field_errors": {
+          "credit_card_name_invalid": "Введіть своє ім'я точно так, як воно написано на вашій картці",
+          "credit_card_number_invalid": "Введіть дійсний номер картки",
+          "credit_card_expiry_invalid": "Введіть дійсну дату закінчення терміну дії картки",
+          "credit_card_verification_value_blank": "Введіть CVV або код безпеки з вашої картки"
+        },
+        "unavailable": {
+          "text": "Оплата кредитними та дебетовими картками наразі недоступна.",
+          "link_text": "Оновіть цю сторінку",
+          "suffix": "або спробуйте ще раз пізніше."
+        }
+      },
+      "payment_delete": {
+        "title": "Видалити спосіб оплати",
+        "description_without_replacement": "Цей спосіб оплати більше не буде доступний для майбутніх покупок.",
+        "description_with_replacement": "Видалення цього способу оплати вплине на попередньо авторизовані платежі. За потреби ви можете замінити його іншим способом оплати, щоб продовжувати отримувати майбутні замовлення.",
+        "warning_message_with_replacement": {
+          "with_pending_orders_and_subscriptions": "Видалення цього способу оплати вплине на попередньо авторизовані платежі. Якщо ви не оберете альтернативний спосіб оплати, з цього способу оплати все одно стягуватиметься плата за будь-які непогашені залишки за існуючими замовленнями. Вибір альтернативного способу оплати дозволить вам отримувати майбутні замовлення на підписку без перерви.",
+          "with_pending_orders": "Видалення цього способу оплати призведе до його видалення з вашого облікового запису та недоступності для майбутніх покупок. Якщо ви не оберете альтернативний спосіб оплати, з нього все одно стягуватиметься плата за будь-які непогашені залишки за існуючими замовленнями.",
+          "with_subscriptions": "Видалення цього способу оплати вплине на попередньо авторизовані платежі. Замініть його альтернативним способом оплати, щоб продовжувати отримувати майбутні замовлення."
+        },
+        "warning_message_without_replacement": {
+          "with_pending_orders_and_subscriptions": "Видалення цього способу оплати вплине на попередньо авторизовані платежі. Цей спосіб оплати все ще стягуватиме плату за будь-які непогашені залишки за існуючими замовленнями, але ви не отримуватимете майбутні замовлення на підписку. Додайте альтернативний спосіб оплати, щоб продовжувати отримувати замовлення на підписку.",
+          "with_pending_orders": "Видалення цього способу оплати призведе до його видалення з вашого облікового запису та недоступності для майбутніх покупок. З нього все одно стягуватиметься плата за будь-які непогашені залишки за існуючими замовленнями.",
+          "with_subscriptions": "Видалення цього способу оплати вплине на попередньо авторизовані платежі. Додайте альтернативний спосіб оплати, щоб продовжувати отримувати майбутні замовлення."
+        },
+        "payment_method_selector_placeholder": "Виберіть заміну способу оплати (необов'язково)",
+        "payment_method_selector_no_alternative_payment": "Немає методу заміни",
+        "replace_method_with_new_method_description": "Ваш {{currentPaymentMethodName}} буде видалено та замінено на ваш {{newPaymentMethodName}} .",
+        "error_when_deleting": "Вибачте, але щось пішло не так, і нам не вдалося видалити цей спосіб оплати. Будь ласка, спробуйте пізніше або оновіть сторінку.",
+        "delete_and_replace_button": "Видалити та замінити",
+        "delete_and_replace_button_accessibility_label": "Видалити {{currentPaymentMethodName}} та замінити на {{newPaymentMethodName}} .",
+        "deleted_successfully": "Спосіб оплати успішно видалено.",
+        "loading_available_payment_methods_accessibility_label": "Завантаження доступних способів оплати"
+      },
+      "add_payment_method": {
+        "title": "Додати спосіб оплати",
+        "payment_method_added_confirmation": "Спосіб оплати додано",
+        "replace_mode_warning": "Видалення цього способу оплати вплине на підписки або попередні замовлення. Замініть його альтернативним способом оплати, щоб продовжувати отримувати майбутні замовлення.",
+        "choose_from_list": "Виберіть зі списку",
+        "add_new_button": "Додати нове",
+        "billing_address": {
+          "title": "Платіжна адреса",
+          "add_billing_address_button": "Додати нове",
+          "add_billing_address_button_accessibility_label": "Додати нову платіжну адресу",
+          "choose_billing_address_from_list_button": "Виберіть зі списку",
+          "choose_billing_address_from_list_button_accessibility_label": "Виберіть платіжну адресу зі списку",
+          "missing_billing_address_error_message": "Будь ласка, вкажіть платіжну адресу",
+          "default_checkbox": "Встановити як спосіб оплати за замовчуванням"
+        }
       }
     },
     "addresses": {
@@ -2285,6 +2354,55 @@
     "address_form": {
       "attention": "Увага",
       "attention_company": "Компанія/увага"
+    },
+    "payment_method_brands": {
+      "visa": "Віза",
+      "mastercard": "Мастеркард",
+      "americanexpress": "Американ Експрес",
+      "discover": "Відкрийте",
+      "dinersclub": "Дайнерс Клаб",
+      "elo": "Ело",
+      "visaelectron": "Віза Електрон",
+      "maestro": "Маестро",
+      "forbrugsforeningen": "Форбругсфоренінген",
+      "dankort": "Данкорт",
+      "hipercard": "Гіперкарта",
+      "laser": "Лазер",
+      "shoppay": "Оплата в магазині",
+      "storecredit": "Кредит магазину",
+      "bogus": "Фальшивий"
+    },
+    "privacy_banner": {
+      "cookie_preferences_link": "Налаштування файлів cookie"
+    },
+    "ui_components": {
+      "clear": "Очистити",
+      "clipboardCopied": "Скопійовано",
+      "clipboardFailedToCopy": "Не вдалося скопіювати",
+      "closeNotification": "Закрити",
+      "expandNotification": "Переглянути більше",
+      "closeModal": "Закрити",
+      "submit": "Надіслати",
+      "processing": "Обробка…",
+      "increase": "Збільшити {{type}}",
+      "decrease": "Зменшити {{type}}",
+      "minimumReached": "Досягнуто мінімальної суми {{value}}",
+      "maximumReached": "Досягнуто максимуму {{value}}",
+      "january": "Січень",
+      "february": "Лютий",
+      "march": "Березень",
+      "april": "Квітень",
+      "may": "Травень",
+      "june": "Червень",
+      "july": "Липень",
+      "august": "Серпень",
+      "september": "Вересень",
+      "october": "Жовтень",
+      "november": "Листопад",
+      "december": "Грудень",
+      "monday": "Понеділок",
+      "tuesday": "Вівторок",
+      "wednesday": "Середа"
     }
   },
   "content": {
