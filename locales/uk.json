@@ -124,7 +124,98 @@
             "local_pickup_no_delivery_strategy_available": "Не знайдено доступної стратегії доставки з місцевим самовивозом.",
             "origin_location_id_required": "Ідентифікатор місця відправлення потрібен, коли запитується спосіб доставки RETAIL.",
             "invalid_origin_location_id": "Не вдалося знайти місцезнаходження, що відповідає ідентифікатору вихідного місця розташування."
+          },
+          "captcha": {
+            "token_invalid": "Наданий токен капчі недійсний. Заповніть нову капчу, щоб продовжити оформлення замовлення.",
+            "token_not_valid_for_session": "Надана капча не може бути використана для цієї оплати."
+          },
+          "fx_reconciliation_override": {
+            "shop_currency_mismatch": "Отримана сума має бути у валюті магазину."
+          },
+          "checkout_source": {
+            "revoked": "Ця каса більше не доступна."
           }
+        },
+        "full_price": "Повна ціна:",
+        "title": "Оформлення замовлення - {{shopName}}",
+        "full_title": "{{pageTitle}} - {{shopName}} - Оформлення замовлення",
+        "loading": "Завантаження…",
+        "loading_title": "Оформлення замовлення - {{shopName}}",
+        "google_map_title": "Карта Google",
+        "confirm_order_button_label": "Підтвердити замовлення",
+        "submit_order_button_label": "Надіслати замовлення",
+        "submit_for_review_button_label": "Надіслати на розгляд",
+        "submit_for_review_notice_label": "Оплата не буде здійснена, доки ваше замовлення не буде перевірено",
+        "continue_to_payment_plans_button_label": "Перейти до планів оплати",
+        "back_button_label": "Повернення",
+        "choose_delivery_strategy": "Виберіть спосіб доставки",
+        "autocomplete_zero_item": "Немає доступних товарів",
+        "autocomplete_powered_by_google": "Працює на базі {{brandName}}",
+        "submit": "Надіслати",
+        "processing": "Обробка…",
+        "stepper": {
+          "increase": "Збільшити {{type}}",
+          "decrease": "Зменшити {{type}}",
+          "minimum_reached": "Досягнуто мінімальної суми {{value}}",
+          "maximum_reached": "Досягнуто максимуму {{value}}"
+        },
+        "remove_chip": "Видалити елемент",
+        "remove_item": "Видалити %{label}",
+        "remove_tag": "Видалити тег",
+        "dates": {
+          "weekdays": {
+            "monday": "Понеділок",
+            "tuesday": "Вівторок",
+            "wednesday": "Середа",
+            "thursday": "Четвер",
+            "friday": "П'ятниця",
+            "saturday": "Субота",
+            "sunday": "Неділя"
+          },
+          "weekdays_abbreviation": {
+            "monday": "Мо",
+            "tuesday": "Вт",
+            "wednesday": "Ми",
+            "thursday": "Чт",
+            "friday": "Пт",
+            "saturday": "Сб",
+            "sunday": "Су"
+          },
+          "months": {
+            "january": "Січень",
+            "february": "Лютий",
+            "march": "Березень",
+            "april": "Квітень",
+            "may": "Травень",
+            "june": "Червень",
+            "july": "Липень",
+            "august": "Серпень",
+            "september": "Вересень",
+            "october": "Жовтень",
+            "november": "Листопад",
+            "december": "Грудень"
+          }
+        },
+        "datepicker": {
+          "show_previous_month": "Показати попередній місяць, {{month}} {{year}}",
+          "show_next_month": "Показати наступного місяця, {{month}} {{year}}",
+          "range_start": "Початок діапазону",
+          "in_range": "У межах досяжності",
+          "range_end": "Кінець діапазону"
+        },
+        "map": {
+          "cluster_title": {
+            "one": "Кластер маркера {{number}}",
+            "other": "Кластер маркерів {{number}}"
+          }
+        },
+        "sheet": {
+          "expand": "Розгорнути"
+        },
+        "dropzone": {
+          "add_file": "Додати файл",
+          "invalid_file_type": "Тип файлу не підтримується",
+          "dragged_over": "Перетягніть файл для завантаження"
         }
       },
       "order_summary": {
@@ -566,6 +657,43 @@
         "editable_shipping_address_violations_message_title": "Додайте цю інформацію, щоб завершити замовлення:",
         "editable_shipping_address_violations_message_footer": "Щоб остаточно оновити адресу цього місця, {{emailLink}} .",
         "editable_shipping_address_violations_email_link": "зв'яжіться з нами"
+      },
+      "contact": {
+        "title": "Інформація",
+        "address_title": "Адреса",
+        "shipping_used_as_billing_notice": "Ця адреса також буде використана як ваша платіжна адреса для цього замовлення.",
+        "delivery_option_title": "Спосіб доставки",
+        "contact_method_title": "Контакти",
+        "email_label": "Електронна пошта",
+        "email_rollup_accessibility_label": "Варіанти електронної пошти",
+        "email_placeholder": "Електронна пошта",
+        "email_or_phone_label": "Електронна пошта або номер мобільного телефону",
+        "email_or_phone_placeholder": "Електронна пошта або номер мобільного телефону",
+        "stored_addresses_label": "Збережені адреси",
+        "available_addresses_label": "Доступні адреси",
+        "new_address_label": "Використати нову адресу",
+        "first_name_label": "Ім'я",
+        "optional_first_name_label": "Ім'я (необов'язково)",
+        "last_name_label": "Прізвище",
+        "company_label": "Компанія",
+        "company_attention_label": "Компанія/Увага",
+        "optional_company_attention_label": "Компанія/Увага (необов'язково)",
+        "optional_company_label": "Компанія (необов'язково)",
+        "address1_label": "Адреса",
+        "address2_label": "Квартира, люкс тощо.",
+        "optional_address2_label": "Апартаменти, люкси тощо (необов'язково)",
+        "city_label": "Місто",
+        "country_label": "Країна/регіон",
+        "country_code": "Код країни/регіону",
+        "province_label": "Провінція",
+        "province_placeholder": "Провінція",
+        "county_label": "Округ",
+        "county_placeholder": "Округ",
+        "state_label": "Штат",
+        "state_placeholder": "Штат",
+        "region_label": "Регіон",
+        "region_placeholder": "Регіон",
+        "region_none": "Не вибрано"
       }
     },
     "notices": {
