@@ -268,6 +268,304 @@
             "one": "%{shipping_price} для доставки %{count}"
           }
         }
+      },
+      "payment_gateway": {
+        "debit_card_label": "Дебетова картка",
+        "deferred_payment_label": "Виберіть спосіб оплати пізніше",
+        "fixed_payment_label": "Ваш платіж буде здійснено {{dueDate}} .",
+        "generic_payment_terms": "Ви дієте за умовами {{translatedName}} . Ваш платіж буде здійснено {{dueDate}} .",
+        "login_prompt": {
+          "no_access": {
+            "message": "{{logIn}} увійдіть до облікового запису з доступом до цього місця, щоб додати або використовувати збережені способи оплати.",
+            "link": "Увійти"
+          }
+        },
+        "direct_payment_terms": "Ви дієте на умовах {{translatedName}} . Кошти з вашої картки будуть списані {{dueDate}} .",
+        "fixed_direct_payment_terms": "Кошти з вашої картки буде стягнуто {{dueDate}} .",
+        "order_due_on_fulfillment_choose_later": "Ваш платіж буде здійснено після виконання вашого замовлення.",
+        "order_due_on_fulfillment_payment": "З вашої картки буде списано кошти після виконання вашого замовлення.",
+        "order_due_on_receipt_choose_later": "Ваш платіж буде здійснено після отримання.",
+        "order_deposit_due_now": "{{depositAmount}} має бути сплачено сьогодні. Залишок коштів на умовах {{translatedName}} має бути сплачений {{dueDate}} .",
+        "order_deposit_due_on_fulfillment": "Сплата {{depositAmount}} має бути здійснена сьогодні. Залишок коштів буде сплачено після виконання вашого замовлення.",
+        "order_deposit_due_on_receipt": "{{depositAmount}} має бути сплачено сьогодні. Залишок буде сплачено пізніше.",
+        "order_deposit_due_on_fixed_date": "{{depositAmount}} має бути сплачено сьогодні. Залишок буде сплачено {{dueDate}} .",
+        "draft_order_payment_due_later_no_terms": "Ваш платіж буде здійснено після підтвердження вашого замовлення.",
+        "draft_order_payment_due_later_no_terms_payment_selected": "Кошти з вашої картки будуть списані після підтвердження вашого замовлення.",
+        "draft_order_payment_due_later_terms": "Після підтвердження вашого замовлення ви будете на умовах {{translatedName}} .",
+        "draft_order_payment_due_on_fulfillment": "Ваш платіж буде здійснено після підтвердження та виконання вашого замовлення.",
+        "draft_order_deposit_due_later": "Сума {{depositAmount}} буде сплачена після підтвердження вашого замовлення. Залишок коштів буде на умовах {{translatedName}} .",
+        "draft_order_deposit_due_on_fulfillment": "Сума {{depositAmount}} буде сплачена після підтвердження вашого замовлення. Залишок коштів буде нараховано після виконання вашого замовлення."
+      },
+      "thank_you": {
+        "title": "Дякуємо за вашу покупку!",
+        "confirmation_email_sent_text": "Лист із підтвердженням надіслано на адресу %{email}",
+        "return_to_store_link_label": "Продовжити покупки",
+        "print_link_label": "Роздрукувати квитанцію",
+        "payment_information_title": "Інформація про оплату",
+        "shipping_information_title": "Інформація про доставку",
+        "page_title": "Дякую, %{display_name}!",
+        "page_title_no_name": "Дякую!",
+        "purchase_order_number_title": "Номер замовлення на замовлення #%{purchase_order_number}",
+        "cancelled_page_title": "Замовлення скасовано",
+        "failed_pending_payment_page_title": "Виникла проблема з вашим платежем",
+        "customer_information_title": "Деталі замовлення",
+        "contact_information_title": "Контактна інформація",
+        "billing_address_title": "Платіжна адреса",
+        "company_location_title": "Розташування",
+        "shipping_address_title": "Адреса доставки",
+        "shipping_address_map_title": "Карта Google, що відображає точку адреси доставки: %{address}",
+        "payment_method_title": "Спосіб оплати",
+        "payment_method_not_charged": "Не стягується плата",
+        "shipping_method_title": "Спосіб доставки",
+        "tracking_number": "Номер відстеження:",
+        "company_tracking_number": "Номер відстеження %{company}:",
+        "estimated_arrival": "Орієнтовна дата доставки: ",
+        "estimated_delivery": "Поточна оцінка доставки: ",
+        "re-order": "Повторно замовити ті самі товари",
+        "confirmed": "Підтверджено",
+        "confirmed_items_count": "%{confirmed_count} з %{total_count} елементів підтверджено",
+        "items_fulfilled_by_store": {
+          "one": "Придбані вами товари будуть доставлені з %{remote_shop_name}.",
+          "other": "Придбані вами товари будуть з інших магазинів."
+        },
+        "gift_card_confirmation_by_text": "Якщо ви не отримали його, надішліть SMS ще раз або зв'яжіться з нами.",
+        "gift_card_confirmation_by_email": "Якщо ви не отримали його, надішліть електронного листа ще раз або зв’яжіться з нами.",
+        "gift_card_title": "Подарункові картки",
+        "resend_gift_cards": "Повторно надіслати подарункові картки",
+        "thank_you_title": "Ваше замовлення підтверджено",
+        "thank_you_title_payment": "Ваш платіж підтверджено",
+        "thank_you_title_review": "Ваше замовлення надіслано на розгляд",
+        "thank_you_title_payments_app_pending_default": "Ваш платіж обробляється",
+        "thank_you_title_payments_app_pending_buyer_action_required": "Ваше замовлення отримано",
+        "thank_you_title_payments_app_failed_pending_payment": "Ваш платіж не вдалося обробити",
+        "thank_you_confirmed_with_email_description": {
+          "single_store": "Ви незабаром отримаєте електронний лист із підтвердженням",
+          "multi_store": "Незабаром ви отримаєте окремі електронні листи з підтвердженням від кожного магазину"
+        },
+        "thank_you_confirmed_with_phone_description": {
+          "single_store": "Ви незабаром отримаєте SMS-підтвердження",
+          "multi_store": "Незабаром ви отримаєте окремі текстові повідомлення з підтвердженням від кожного магазину"
+        },
+        "thank_you_confirmed_with_email_and_phone_description": {
+          "single_store": "Ви незабаром отримаєте електронний лист із підтвердженням",
+          "multi_store": "Незабаром ви отримаєте окремі електронні листи з підтвердженням від кожного магазину"
+        },
+        "thank_you_confirmed_order_with_email": "Незабаром ви отримаєте електронний лист із підтвердженням та номером вашого замовлення.",
+        "thank_you_confirmed_order_with_phone": "Незабаром ви отримаєте SMS-підтвердження з номером вашого замовлення.",
+        "thank_you_confirmed_order_with_email_and_phone": "Незабаром ви отримаєте електронний лист із підтвердженням та номером вашого замовлення.",
+        "thank_you_confirmed_orders_with_email": "Незабаром ви отримаєте окремі електронні листи з підтвердженням та номерами ваших замовлень",
+        "thank_you_confirmed_orders_with_phone": "Незабаром ви отримаєте окремі текстові повідомлення з підтвердженням та номерами ваших замовлень",
+        "thank_you_confirmed_orders_with_email_and_phone": "Незабаром ви отримаєте окремі електронні листи з підтвердженням та номерами ваших замовлень",
+        "thank_you_confirmed_order_with_email_payment": "Ви здійснили платіж за ваше замовлення %{date}.",
+        "thank_you_confirmed_order_with_phone_payment": "Ви здійснили платіж за ваше замовлення %{date}.",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "Ви здійснили платіж за ваше замовлення %{date}.",
+        "thank_you_confirmed_order_with_email_pick_up": "Ви отримаєте електронний лист, коли ваше замовлення буде готове до отримання.",
+        "thank_you_confirmed_order_with_phone_pick_up": "Ви отримаєте SMS-повідомлення, коли ваше замовлення буде готове до отримання.",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "Ви отримаєте електронний лист, коли ваше замовлення буде готове до отримання.",
+        "thank_you_confirmed_order_with_missing": "Зв'яжіться з нами електронною поштою або телефоном, щоб отримати підтвердження замовлення.",
+        "thank_you_confirmed_order_with_missing_payment": "Зв'яжіться з нами електронною поштою або телефоном, щоб отримати підтвердження замовлення.",
+        "thank_you_confirmed_order_with_missing_pick_up": "Зв'яжіться з нами електронною поштою або телефоном, щоб отримати підтвердження замовлення.",
+        "thank_you_confirmed_order_with_draft": "Ми повідомимо вас, якщо нам знадобиться додаткова інформація або коли ваше замовлення буде підтверджено.",
+        "thank_you_confirmed_order_with_draft_payment": "Ми повідомимо вас, якщо нам знадобиться додаткова інформація або коли ваше замовлення буде підтверджено.",
+        "thank_you_confirmed_order_with_draft_pick_up": "Ми повідомимо вас, якщо нам знадобиться додаткова інформація або коли ваше замовлення буде підтверджено.",
+        "thank_you_unconfirmed_items_heading": {
+          "one": "1 товар не підтверджено",
+          "other": "Деякі елементи не підтверджені"
+        },
+        "thank_you_unconfirmed_items_description": {
+          "one": "З вас не стягували плату за це",
+          "other": "З вас не стягували плату за це"
+        },
+        "thank_you_confirmed_items_with_email": {
+          "one": "Ви незабаром отримаєте електронний лист із підтвердженням",
+          "other": "Ви незабаром отримаєте електронні листи з підтвердженням"
+        },
+        "thank_you_confirmed_items_with_phone": {
+          "one": "Ви незабаром отримаєте SMS-підтвердження",
+          "other": "Ви незабаром отримаєте SMS-повідомлення з підтвердженням"
+        },
+        "thank_you_item_label": {
+          "one": "%{count} елемент",
+          "other": "%{count} елементів"
+        },
+        "thank_you_from_shop": "З %{shop_name}",
+        "thank_you_from_other_store": "З іншого магазину",
+        "thank_you_payments_app_failed_pending_payment": "З вас не стягнули плату за ваше замовлення. Поверніться до кошика, щоб переглянути своє замовлення та оплатити ще раз.",
+        "thank_you_payments_app_failed_pending_payment_payment": "З вас не стягнули плату за ваше замовлення. Поверніться до кошика, щоб переглянути своє замовлення та оплатити ще раз.",
+        "thank_you_payments_app_failed_pending_payment_pick_up": "З вас не стягнули плату за ваше замовлення. Поверніться до кошика, щоб переглянути своє замовлення та оплатити ще раз.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing": "Зв'яжіться з нами електронною поштою або телефоном, щоб отримати підтвердження замовлення."
+      },
+      "subscriptions": {
+        "recurring_total_intervals": {
+          "month": {
+            "one": "місяць",
+            "other": "%{count} місяців"
+          },
+          "year": {
+            "one": "рік",
+            "other": "%{count} років"
+          }
+        },
+        "recurring_totals": "%{total_price} кожні %{interval}",
+        "recurring_totals_with_initial_order_shipping_discount": "Спочатку платіж %{total_price_with_discount}, потім %{recurring_total}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "Перший платіж %{total_price}",
+            "other": "Перші %{count} платежі %{total_price} кожен"
+          },
+          "following_cycles": ", потім %{total_price} кожні %{interval}"
+        },
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": ", тоді %{count} оплата за %{total_price}",
+            "other": ", тоді %{count} платежів по %{total_price} кожен"
+          }
+        }
+      },
+      "customer_payment_methods": {
+        "page_title": "Способи оплати",
+        "title": "Способи оплати",
+        "update_card_button_label": "Оновити картку",
+        "delete_customer_mandate": {
+          "generic_error": "Виникла проблема з обробкою вашого запиту.",
+          "success_message": "Ваш спосіб оплати успішно видалено"
+        }
+      },
+      "throttle": {
+        "too_many_attempts": {
+          "message": "Забагато спроб",
+          "description": "Будь ласка, спробуйте ще раз через кілька хвилин"
+        },
+        "line_to_check_out": "Ви стоїте в черзі на оформлення замовлення",
+        "cart_summary_heading": "Ваш кошик",
+        "merchandise": {
+          "available": "Доступно",
+          "sold_out": "Розпродано"
+        },
+        "inventory": {
+          "partial_inventory_banner": "Частина вашого кошика розпродана і не буде доступна для покупки під час оформлення замовлення.",
+          "sold_out": {
+            "heading": "Ваш кошик розпродано",
+            "storefront_body": "Поверніться до магазину, щоб продовжити покупки",
+            "no_storefront_body": "На жаль, товар, який ви хочете придбати, більше недоступний.",
+            "link": "Назад до магазину"
+          }
+        },
+        "title": "Черга",
+        "time_to_checkout_title": "Час оформити замовлення - {{shopName}}",
+        "estimated_wait_time": {
+          "calculating": "Розрахунок орієнтовного часу очікування",
+          "less_than_one": "Орієнтовний час очікування: менше хвилини",
+          "one": "Орієнтовний час очікування: {{count}} хвилина",
+          "other": "Орієнтовний час очікування: {{count}} хвилин"
+        },
+        "last_checked": "(Остання перевірка: {{time}} )",
+        "footer": {
+          "heading": "Не оновлюйте цю сторінку, вона оновиться автоматично.",
+          "body": "Товари у вашому кошику не резервуються, доки ви не завершите оформлення замовлення."
+        }
+      },
+      "cart_checkout_validation": {
+        "runtime_error": "Виникла проблема з обробкою вашого запиту. Будь ласка, зв’яжіться з власником магазину."
+      },
+      "no_address_location": {
+        "title": "Місце без адреси",
+        "header": "У вас немає адреси доставки для цього місця",
+        "alt_header": "Відсутня адреса доставки",
+        "message": "Зв’яжіться з нами, щоб додати адресу для цього місця та завершити оформлення замовлення.",
+        "email_us_button_label": "Надішліть нам електронного листа"
+      },
+      "order_errors": {
+        "creation_failure": "Виникла проблема зі створенням вашого замовлення. Спробуйте ще раз або зв’яжіться з нами для отримання додаткової інформації.",
+        "network_failure": "Ваше замовлення не вдалося надіслати через помилку мережі. Перевірте з’єднання та спробуйте ще раз.",
+        "inventory_reservation_failure": "Деякі товари більше недоступні."
+      },
+      "session_errors": {
+        "session_not_unique": "Виникла проблема з обробкою вашого замовлення. Оновіть цю сторінку, щоб повернутися до магазину.",
+        "session_already_finished": "Це замовлення вже надіслано. Ви можете повернутися до магазину, щоб розпочати нове замовлення."
+      },
+      "artifact_errors": {
+        "artifact_dissatisfaction_without_violation": "Виникла проблема з обробкою вашого замовлення. Спробуйте ще раз через кілька хвилин."
+      },
+      "pickup_point": {
+        "location_is_currently_closed": "ЗАЧИНЕНО",
+        "business_hours": "Години роботи",
+        "no_business_hours": "Години роботи відсутні",
+        "open_twenty_four_hours": "Відкрито цілодобово",
+        "title": "Пункт видачі",
+        "or": "або",
+        "search_button": "Пошук",
+        "address_label": "Адреса",
+        "selector_tabs": "Вибір пункту видачі",
+        "selector_tab_map": "Карта",
+        "selector_tab_list": "Список",
+        "could_not_resolve_address": "Вашу адресу не вдалося знайти. Спробуйте ще раз або скористайтеся іншою адресою.",
+        "no_pickup_points_near_you": "Поблизу вибраної адреси не знайдено пунктів видачі",
+        "no_pickup_points_near_location": "Поблизу вашого місцезнаходження не знайдено пунктів видачі",
+        "pickup_unavailable_banner_title": {
+          "one": "Немає доступних пунктів видачі для вашого товару",
+          "other": "Немає доступних пунктів видачі для ваших товарів"
+        },
+        "no_pickup_points_found": "Пунктів видачі не знайдено",
+        "paginator": {
+          "next_accessibility_label": "Наступна сторінка",
+          "previous_accessibility_label": "Попередня сторінка",
+          "header": {
+            "one": "Показано %{first} - %{last} з %{count} балів",
+            "other": "Показано %{first} - %{last} з %{count} балів"
+          },
+          "selected_pickup_point_label": {
+            "one": "%{pickup_point_index} з %{count} балів",
+            "other": "%{pickup_point_index} з %{count} балів"
+          },
+          "selected_page": {
+            "one": "%{first} - %{last} від %{count} балів",
+            "other": "%{first} - %{last} з %{count} балів"
+          }
+        },
+        "number_of_pickup_points_near_location": {
+          "one": "%{count} пункт видачі поблизу вашого місцезнаходження",
+          "other": "%{count} пунктів видачі поблизу вашого місцезнаходження"
+        },
+        "change": "Змінити місцезнаходження",
+        "waiting_on_pickup_point_location_notice": "Пошук пунктів видачі...",
+        "geolocation": {
+          "shared_location_button": "Використовувати моє місцезнаходження",
+          "errors": {
+            "unsuported_by_browser": "Ваш браузер не підтримує геолокацію. Спробуйте ще раз або скористайтеся іншим браузером.",
+            "permission_not_allowed": "Дозволити обмін вашим місцезнаходженням.",
+            "permission_denied": "Не вдалося визначити ваше місцезнаходження. Спробуйте ще раз."
+          }
+        }
+      },
+      "error_page": {
+        "terminal": {
+          "title": "Виникла проблема з нашою оплатою",
+          "message": "Оновіть цю сторінку або спробуйте ще раз через кілька хвилин",
+          "action": {
+            "cta": "Оновити сторінку"
+          },
+          "request_id": "Ідентифікатор запиту: {{requestId}}"
+        }
+      },
+      "notice_banner": {
+        "return_to_cart_link_text": "Повернутися до кошика",
+        "return_to_cart_to_update_quantities": "%{return_to_cart_link_text} для оновлення кількості",
+        "subscription_changed": "Одна з ваших підписок змінилася.",
+        "company_location_changed": "Ваш кошик оновлено. Перегляньте своє замовлення перед відправкою.",
+        "company_location_changed_product_removed": "Ваш кошик оновлено, оскільки деякі товари недоступні в цьому місці. Перегляньте своє замовлення, перш ніж відправляти його.",
+        "violations_title": "{{violation}} відсутній або недійсний",
+        "individual_violations_title": {
+          "DeliveryViolations": "Адреса доставки",
+          "PaymentViolations": "Платіжна адреса",
+          "OtherViolations": "Інформація про замовлення",
+          "UnhandledViolations": "Інформація про замовлення"
+        },
+        "all_violations_content": "Зателефонуйте або напишіть нам {{emailLink}} , щоб оновити цю інформацію та завершити замовлення:",
+        "all_violations_email_link": "електронна пошта",
+        "editable_shipping_address_violations_message_title": "Додайте цю інформацію, щоб завершити замовлення:",
+        "editable_shipping_address_violations_message_footer": "Щоб остаточно оновити адресу цього місця, {{emailLink}} .",
+        "editable_shipping_address_violations_email_link": "зв'яжіться з нами"
       }
     }
   }
