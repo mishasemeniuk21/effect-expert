@@ -515,7 +515,7 @@
       "settings": {
         "collection": "all",
         "layout_type": "grid",
-        "carousel_on_mobile": true,
+        "carousel_on_mobile": false,
         "max_products": 12,
         "columns": 4,
         "mobile_columns": "2",
