@@ -604,9 +604,11 @@
       "name": "Collection list: Carousel",
       "settings": {
         "collection_list": [
-          "rozhidnyky",
+          "eyelashes",
           "removers",
-          "pre-care"
+          "pre-care",
+          "rozhidnyky",
+          "glue"
         ],
         "layout_type": "carousel",
         "carousel_on_mobile": false,
