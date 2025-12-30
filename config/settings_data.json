@@ -12,7 +12,7 @@
     "logo": "shopify://shop_images/ee-logo.svg",
     "logo_height": 38,
     "logo_height_mobile": 32,
-    "favicon": "shopify://shop_images/cropped-favicon-gradient-1-192x192.png",
+    "favicon": "shopify://shop_images/favicon.png",
     "type_body_font": "geist_n4",
     "type_subheading_font": "geist_n4",
     "type_heading_font": "chivo_n7",
