@@ -64,6 +64,7 @@
 
     {%- if recommendations.performed or section.settings.product == blank or metafield_products != blank -%}
       {% liquid
+        echo metafield_products | json
         if metafield_products != blank
            # Priority 1: Use Metafield Products
            assign products = metafield_products
