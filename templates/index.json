@@ -545,7 +545,7 @@
       },
       "name": "Featured collection",
       "settings": {
-        "collection": "eyelashes",
+        "collection": "best-sellers",
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "max_products": 12,
@@ -665,7 +665,7 @@
         "text_RGxHtE": {
           "type": "text",
           "settings": {
-            "text": "<h1><a href=\"/collections/all\" title=\"All products\">SHOP NOW </a></h1>",
+            "text": "<h1><a href=\"/collections/all\" title=\"All products\">ДО ШОПІНГУ</a></h1>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
