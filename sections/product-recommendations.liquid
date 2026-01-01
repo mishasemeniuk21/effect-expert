@@ -1,4 +1,3 @@
-
 <script
   src="{{ 'product-recommendations.js' | asset_url }}"
   type="module"
@@ -23,17 +22,24 @@
     echo '--column-count: ' | append: section.settings.columns | append: ';'
     echo '--column-count-mobile: ' | append: section.settings.mobile_columns | append: ';'
   endcapture
+
+  # LOGIC: Check for the custom metafield list first
+  assign metafield_products = section.settings.product.metafields.next_cart.complementary_products.value | default: product.metafields.next_cart.complementary_products.value
 %}
 
 <product-recommendations
   id="product-recommendations-{{ section.id }}"
   class="product-recommendations"
-  data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.max_products }}"
   data-section-id="{{ section.id }}"
   data-product-id="{{ section.settings.product.id | default: product.id }}"
   data-intent="{{ section.settings.recommendation_type }}"
   data-testid="product-recommendations-section"
-  data-recommendations-performed="{{ recommendations.performed }}"
+  {% if metafield_products != blank %}
+    data-recommendations-performed="true"
+  {% else %}
+    data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.max_products }}"
+    data-recommendations-performed="{{ recommendations.performed }}"
+  {% endif %}
   {{ section.shopify_attributes }}
 >
   <div class="section-background color-{{ section.settings.color_scheme }}"></div>
@@ -56,25 +62,28 @@
       {% content_for 'blocks' %}
     </div>
 
-    {%- if recommendations.performed or section.settings.product == blank -%}
+    {%- if recommendations.performed or section.settings.product == blank or metafield_products != blank -%}
       {% liquid
-        if section.settings.product == blank
+        if metafield_products != blank
+           # Priority 1: Use Metafield Products
+           assign products = metafield_products
+        elsif section.settings.product == blank
           assign products = null
-          # Onboarding mode: Show placeholder products
+          # Priority 2: Onboarding mode (Show placeholder products)
           for i in (1..section.settings.max_products)
             assign products = products | append: ', '
             assign products = products | split: ','
           endfor
         elsif recommendations.performed and recommendations.products_count == 0
-          # No recommendations found, pull from catalog
+          # Priority 3: No recommendations found, pull from catalog
           if section.settings.recommendation_type == 'related'
             assign products = collections.all.products | reject: 'id', section.settings.product.id
           elsif section.settings.recommendation_type == 'complementary'
             # Do not recommend the All collection as complementary products
             assign products = null
           endif
-
         else
+          # Priority 4: Standard Recommendations
           assign products = recommendations.products
         endif
       %}
@@ -84,15 +93,14 @@
             {% content_for 'block', type: '_product-card', id: 'static-product-card', closest.product: product %}
           </div>
           {% unless forloop.last %}
-            <!--@list/split-->
-          {% endunless %}
+            {% endunless %}
         {% endfor %}
       {% endcapture %}
 
       {% liquid
         # Create an array from the list items to be used in the carousel
         assign slide_content = list_items | strip
-        assign slides = slide_content | split: '<!--@list/split-->'
+        assign slides = slide_content | split: ''
 
         if products != blank and products.size > 0
           assign has_recommendations = 'true'
@@ -124,7 +132,7 @@
             {% render 'resource-list-carousel',
               ref: 'resourceListCarousel',
               slides: slides,
-              slide_count: recommendations.products.size,
+              slide_count: products.size,
               settings: section.settings
             %}
         {% endcase %}
@@ -148,7 +156,7 @@
           {% render 'resource-list-carousel',
             ref: 'resourceListCarouselMobile',
             slides: slides,
-            slide_count: recommendations.products.size,
+            slide_count: products.size,
             settings: section.settings
           %}
         </div>
