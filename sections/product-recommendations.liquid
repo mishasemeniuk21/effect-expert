@@ -1,3 +1,4 @@
+
 <script
   src="{{ 'product-recommendations.js' | asset_url }}"
   type="module"
@@ -22,17 +23,6 @@
     echo '--column-count: ' | append: section.settings.columns | append: ';'
     echo '--column-count-mobile: ' | append: section.settings.mobile_columns | append: ';'
   endcapture
-
-  # Check for Custom Metafields first
-  assign metafield_list = section.settings.product.metafields.next_cart.complementary_products.value | default: product.metafields.next_cart.complementary_products.value
-  
-  if metafield_list != blank and metafield_list.count > 0
-    assign use_metafields = true
-    assign recommendations_performed = 'true'
-  else
-    assign use_metafields = false
-    assign recommendations_performed = recommendations.performed
-  endif
 %}
 
 <product-recommendations
@@ -43,7 +33,7 @@
   data-product-id="{{ section.settings.product.id | default: product.id }}"
   data-intent="{{ section.settings.recommendation_type }}"
   data-testid="product-recommendations-section"
-  data-recommendations-performed="{{ recommendations_performed }}"
+  data-recommendations-performed="{{ recommendations.performed }}"
   {{ section.shopify_attributes }}
 >
   <div class="section-background color-{{ section.settings.color_scheme }}"></div>
@@ -66,11 +56,9 @@
       {% content_for 'blocks' %}
     </div>
 
-    {%- if recommendations.performed or section.settings.product == blank or use_metafields -%}
+    {%- if recommendations.performed or section.settings.product == blank -%}
       {% liquid
-        if use_metafields
-          assign products = metafield_list
-        elsif section.settings.product == blank
+        if section.settings.product == blank
           assign products = null
           # Onboarding mode: Show placeholder products
           for i in (1..section.settings.max_products)
@@ -85,25 +73,26 @@
             # Do not recommend the All collection as complementary products
             assign products = null
           endif
+
         else
           assign products = recommendations.products
         endif
       %}
-      
       {% capture list_items %}
         {% for product in products limit: section.settings.max_products %}
           <div class="resource-list__item">
             {% content_for 'block', type: '_product-card', id: 'static-product-card', closest.product: product %}
           </div>
           {% unless forloop.last %}
-            {% endunless %}
+            <!--@list/split-->
+          {% endunless %}
         {% endfor %}
       {% endcapture %}
 
       {% liquid
         # Create an array from the list items to be used in the carousel
         assign slide_content = list_items | strip
-        assign slides = slide_content | split: ''
+        assign slides = slide_content | split: '<!--@list/split-->'
 
         if products != blank and products.size > 0
           assign has_recommendations = 'true'
@@ -135,7 +124,7 @@
             {% render 'resource-list-carousel',
               ref: 'resourceListCarousel',
               slides: slides,
-              slide_count: products.size,
+              slide_count: recommendations.products.size,
               settings: section.settings
             %}
         {% endcase %}
@@ -159,7 +148,7 @@
           {% render 'resource-list-carousel',
             ref: 'resourceListCarouselMobile',
             slides: slides,
-            slide_count: products.size,
+            slide_count: recommendations.products.size,
             settings: section.settings
           %}
         </div>
