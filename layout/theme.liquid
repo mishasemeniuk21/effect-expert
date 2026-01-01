@@ -65,5 +65,12 @@
     {% if settings.quick_add or settings.mobile_quick_add %}
       {% render 'quick-add-modal' %}
     {% endif %}
+    <!-- KeyCRM online chat widget begin -->
+<script type="text/javascript">
+(function(w,d,t,u,c){
+  var s=d.createElement(t),j=d.getElementsByTagName(t)[0];s.src=u;s["async"]=true;s.defer=true;s.onload=function(){KeyCRM.render(c);};j.parentNode.insertBefore(s,j)
+})(window, document, "script","https://chat.key.live/bundles/widget.min.js",{token:"8d780f91-fec1-4929-812a-10f776537e7b"});
+</script>
+<!-- KeyCRM online chat widget end -->
   </body>
 </html>
