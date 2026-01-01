@@ -40,13 +40,14 @@
           },
           "blocks": {}
         },
-        "slide_bCCfMF": {
+        "slide_KNwEbV": {
           "type": "_slide",
+          "name": "t:names.slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/1.png",
-            "image_mobile": "shopify://shop_images/1_a8456bcd-66d7-4527-8521-9f01b33de7c5.png",
-            "link": "shopify://products/gentle-skin-foam",
+            "image_1": "shopify://shop_images/3.png",
+            "image_mobile": "shopify://shop_images/860_x_1076_..png",
+            "link": "",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -68,14 +69,13 @@
           },
           "blocks": {}
         },
-        "slide_KNwEbV": {
+        "slide_bCCfMF": {
           "type": "_slide",
-          "name": "t:names.slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/3.png",
-            "image_mobile": "shopify://shop_images/860_x_1076_..png",
-            "link": "",
+            "image_1": "shopify://shop_images/1.png",
+            "image_mobile": "shopify://shop_images/1_a8456bcd-66d7-4527-8521-9f01b33de7c5.png",
+            "link": "shopify://products/gentle-skin-foam",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -129,8 +129,8 @@
       },
       "block_order": [
         "slide_acyVTg",
-        "slide_bCCfMF",
         "slide_KNwEbV",
+        "slide_bCCfMF",
         "slide_mqTxHz"
       ],
       "name": "t:names.slideshow",
