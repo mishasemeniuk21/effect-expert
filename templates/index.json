@@ -138,7 +138,7 @@
         "icons_style": "none",
         "slideshow_controls_style": "counter",
         "color_scheme": "",
-        "autoplay": false,
+        "autoplay": true,
         "autoplay_speed": 4,
         "section_width": "full-width",
         "slide_height": "auto",
