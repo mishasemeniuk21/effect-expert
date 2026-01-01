@@ -332,7 +332,7 @@
           "type": "text",
           "name": "t:names.header",
           "settings": {
-            "text": "<h3>Goes well with...</h3>",
+            "text": "<p>Купують разом</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
