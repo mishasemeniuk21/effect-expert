@@ -18,7 +18,7 @@
             "media_type_1": "image",
             "image_1": "shopify://shop_images/5.png",
             "image_mobile": "shopify://shop_images/860_x_1076_._c8b12211-486e-42e9-b025-3b2c18c151b8.png",
-            "link": "",
+            "link": "shopify://collections/pincety",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -248,6 +248,7 @@
         "collection_list": [
           "eyelashes",
           "glue",
+          "pincety",
           "pre-care",
           "removers",
           "rozhidnyky"
