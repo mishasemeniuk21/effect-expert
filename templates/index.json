@@ -12,13 +12,13 @@
     "slideshow_HTPQ7d": {
       "type": "slideshow",
       "blocks": {
-        "slide_acyVTg": {
+        "slide_bCCfMF": {
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/5.png",
-            "image_mobile": "shopify://shop_images/860_x_1076_._c8b12211-486e-42e9-b025-3b2c18c151b8.png",
-            "link": "shopify://collections/pincety",
+            "image_1": "shopify://shop_images/1.png",
+            "image_mobile": "shopify://shop_images/1_a8456bcd-66d7-4527-8521-9f01b33de7c5.png",
+            "link": "shopify://products/gentle-skin-foam",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -69,13 +69,13 @@
           },
           "blocks": {}
         },
-        "slide_bCCfMF": {
+        "slide_acyVTg": {
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/1.png",
-            "image_mobile": "shopify://shop_images/1_a8456bcd-66d7-4527-8521-9f01b33de7c5.png",
-            "link": "shopify://products/gentle-skin-foam",
+            "image_1": "shopify://shop_images/5.png",
+            "image_mobile": "shopify://shop_images/860_x_1076_._c8b12211-486e-42e9-b025-3b2c18c151b8.png",
+            "link": "shopify://collections/pincety",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -128,9 +128,9 @@
         }
       },
       "block_order": [
-        "slide_acyVTg",
-        "slide_KNwEbV",
         "slide_bCCfMF",
+        "slide_KNwEbV",
+        "slide_acyVTg",
         "slide_mqTxHz"
       ],
       "name": "t:names.slideshow",
