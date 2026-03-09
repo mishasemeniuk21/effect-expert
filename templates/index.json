@@ -17,8 +17,6 @@
           "name": "t:names.slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/IMG_7701.png",
-            "image_mobile": "shopify://shop_images/IMG_7700.png",
             "link": "",
             "content_direction": "column",
             "vertical_on_mobile": true,
