@@ -12,6 +12,35 @@
     "slideshow_HTPQ7d": {
       "type": "slideshow",
       "blocks": {
+        "slide_bFVtei": {
+          "type": "_slide",
+          "name": "t:names.slide",
+          "settings": {
+            "media_type_1": "image",
+            "image_1": "shopify://shop_images/c88739c52f3f11556b9078e3cb6609ea_56fa64df-2480-480c-ae4d-15283e9896bf.png",
+            "image_mobile": "shopify://shop_images/860_x_1076_._73df673a-e648-4919-a4cb-335a6825c233.png",
+            "link": "",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "slide_bCCfMF": {
           "type": "_slide",
           "settings": {
@@ -39,99 +68,11 @@
             "padding-inline-end": 0
           },
           "blocks": {}
-        },
-        "slide_KNwEbV": {
-          "type": "_slide",
-          "name": "t:names.slide",
-          "settings": {
-            "media_type_1": "image",
-            "image_1": "shopify://shop_images/3.png",
-            "image_mobile": "shopify://shop_images/860_x_1076_._24633379-28f8-4a0b-a250-205837017bc7.png",
-            "link": "https://effect-expert.com/products/11922?variant=51793865933081",
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "slide_acyVTg": {
-          "type": "_slide",
-          "settings": {
-            "media_type_1": "image",
-            "image_1": "shopify://shop_images/5.png",
-            "image_mobile": "shopify://shop_images/860_x_1076_._c8b12211-486e-42e9-b025-3b2c18c151b8.png",
-            "link": "shopify://collections/pincety",
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "slide_mqTxHz": {
-          "type": "_slide",
-          "name": "t:names.slide",
-          "settings": {
-            "media_type_1": "image",
-            "image_1": "shopify://shop_images/2.png",
-            "image_mobile": "shopify://shop_images/2_692ed87f-810e-4440-9152-0daa65534ee4.png",
-            "link": "https://effect-expert.com/products/balance-mix-chorni?variant=51793844764953",
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
         }
       },
       "block_order": [
-        "slide_bCCfMF",
-        "slide_KNwEbV",
-        "slide_acyVTg",
-        "slide_mqTxHz"
+        "slide_bFVtei",
+        "slide_bCCfMF"
       ],
       "name": "t:names.slideshow",
       "settings": {
