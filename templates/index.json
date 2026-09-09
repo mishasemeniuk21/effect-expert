@@ -16,9 +16,9 @@
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/1.png",
-            "image_mobile": "shopify://shop_images/1_a8456bcd-66d7-4527-8521-9f01b33de7c5.png",
-            "link": "shopify://products/gentle-skin-foam",
+            "image_1": "shopify://shop_images/IMG_3641.png",
+            "image_mobile": "shopify://shop_images/IMG_3644.png",
+            "link": "https://shopify.com/authentication/97369817369/login?_y=1a5b8c9c-b813-4d32-8a31-6907353a65b3&analytics_trace_id=38d806d4-bfce-4dbf-b495-21d613fdb21a&client_id=46181021-9041-4a13-9594-c058d855ec07&locale=uk-UA&redirect_uri=%2Fauthentication%2F97369817369%2Foauth%2Fauthorize%3F_y%3D1a5b8c9c-b813-4d32-8a31-6907353a65b3%26analytics_trace_id%3D38d806d4-bfce-4dbf-b495-21d613fdb21a%26buyer_flags%3DeyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJlZmZlY3QtZXhwZXJ0Lm15c2hvcGlmeS5jb20iLCJmbGFncyI6W10sImV4cCI6MTc4OTU0NjU1NiwibmJmIjoxNzg4OTQxNzU2fQ.ZLqITRcymSEGyuNLfrbrGL3m9t9LIjyE3EeR6G0dE38%26client_id%3D46181021-9041-4a13-9594-c058d855ec07%26locale%3Duk-UA%26nonce%3D4782d2a1-7d5e-43e4-b4f2-f1bd3eff51eb%26redirect_uri%3Dhttps%253A%252F%252Fshopify.com%252F97369817369%252Faccount%252Fcallback%26region_country%3DUA%26response_type%3Dcode%26scope%3Dopenid%2Bemail%2Bcustomer-account-api%253Afull%26state%3DhWNGcq2OWWqvrrLjervXhI7l&region_country=UA",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
